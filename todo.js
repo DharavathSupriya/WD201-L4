@@ -1,6 +1,3 @@
-/*eslint semi: "error"*/
-/*eslint quotes: ["error", "double"]*/
-/*eslint-env es6*/
 const todoList = () => {
   const all = [];
   const add = (todoItem) => {
