@@ -6,19 +6,18 @@ const todoList = () => {
   const markAsComplete = (index) => {
     all[index].completed = true;
   };
-  // yesterday
   const overdue = () => {
     return all.filter(
       (todolist) => todolist.dueDate < new Date().toLocaleDateString("en-CA")
     );
   };
-  // today
+
   const dueToday = () => {
     return all.filter(
       (todolist) => todolist.dueDate === new Date().toLocaleDateString("en-CA")
     );
   };
-  // tomorrow
+
   const dueLater = () => {
     return all.filter(
       (todolist) => todolist.dueDate > new Date().toLocaleDateString("en-CA")

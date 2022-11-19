@@ -24,7 +24,7 @@ describe("TodoList Test Suite", () => {
       ).toLocaleDateString("en-CA"),
     });
   });
-  // task to complete
+
   test("add", () => {
     const count = all.length;
     add({
@@ -42,7 +42,6 @@ describe("TodoList Test Suite", () => {
 
   test("overdue_items", () => {
     expect(overdue().length).toBe(1);
-    // expect(overdue_list[0]).toBe(all[0]);
   });
   test("dueToday_items", () => {
     expect(dueToday().length).toBe(2);
